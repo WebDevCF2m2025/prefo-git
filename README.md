@@ -11,6 +11,7 @@
 - [Github](#githubcom)
 - [Ressources GITHUB](#ressources-github)
 - [Compte github](#compte-github)
+- [Lier votre compte et votre PC](#lier-votre-compte-et-votre-pc)
 
 ## UNIX
 
@@ -22,17 +23,17 @@ Il repose sur un interpréteur ou superviseur ( le [shell](https://fr.wikipedia.
 
 Ken Thompson et Dennis Ritchie sont considérés comme les inventeurs d'Unix. Par jeu de mots, le nom UNIX découle de celui d'un système antérieur, Multics.
 
-Il est important de savoir que différents systèmes d'exploitation actuels utilisent les commandes de cette "base" commune : Linux (principal OS pour les serveurs web), IOS, macOS, Android, etc ...
+Il est important de savoir que différents systèmes d'exploitation actuels utilisent les commandes de cette "base" commune : Linux (principal OS pour les serveurs web), IOS, macOS, Android, etc.
 
 [Pour en savoir plus sur UNIX - wikipédia](https://fr.wikipedia.org/wiki/Unix)
 
-Il est important de connaitre les commandes de base pour s'en "sortir" avec GIT, et même pour de nombreux autres langages ou logiciels utilisé via [SSH](https://fr.wikipedia.org/wiki/Secure_Shell).
+Il est important de connaitre les commandes de base pour s'en "sortir" avec GIT, et même pour de nombreux autres langages ou logiciels utilisés via [SSH](https://fr.wikipedia.org/wiki/Secure_Shell).
 
 ### Principales commandes UNIX
 
 Liste des principales commandes que nous utiliserons :
 
-- [pwd](https://man.openbsd.org/pwd)  affiche le chemin absolu du répertoire courant
+- [pwd](https://man.openbsd.org/pwd) affiche le chemin absolu du répertoire courant
 - [ls](https://www.techonthenet.com/unix/basic/ls.php) affiche les répertoires et les fichiers du répertoire actif
     - ls (affiche seulement les noms)
     - ls toto* (affiche les fichiers commençant par toto)
@@ -68,7 +69,7 @@ Liste des principales commandes que nous utiliserons :
 Pour les autres commandes principales (grep, vi, etc...), la documentation est vaste sur internet !
 
 Voici un Cheat sheet en cas de besoin :
-- [Cheat sheet Unix en pdf](https://github.com/WebDevCF2m2022/prefo-git/blob/main/files/Unix_command_cheatsheet.pdf)
+- [Cheat sheet Unix en pdf](files/Unix_command_cheatsheet.pdf)
 
 ## DOS
 
@@ -118,13 +119,13 @@ Vous y trouverez également de la documentation relativement complète online.
 
 Je vous ai mis la dernière version de progit.pdf dans le dépôt (repository) actuel :
 
-- [progit](https://github.com/WebDevCF2m2022/prefo-git/blob/main/files/progit.pdf)
+- [progit](files/progit.pdf)
 
 Git Cheat Sheet en PNG:
-![git-cheat-sheet.png](https://github.com/WebDevCF2m2022/prefo-git/blob/main/files/git-cheat-sheet.png "git-cheat-sheet.png")
+![git-cheat-sheet.png](files/git-cheat-sheet.png "git-cheat-sheet.png")
 
 Un memento Linux :
-- [memento_linux.pdf](https://github.com/WebDevCF2m2022/prefo-git/blob/main/files/memento_linux.pdf "memento_linux.pdf")
+- [memento_linux.pdf](files/memento_linux.pdf "memento_linux.pdf")
 
 ## GitHub.com
 
@@ -153,9 +154,9 @@ Nous utiliserons github.com pour stocker nos fichiers et travailler sur les proj
 
 Si vous n'avez pas encore de compte, créez-en un avec une adresse mail valide.
 
-Notre groupe se trouvera à cette URL pour cette session de formation:
+Notre groupe se trouvera à cette URL pour cette session de formation :
 
-https://github.com/WebDevCF2m2023
+https://github.com/WebDevCF2m2025
 
 ## Compte Github
 
@@ -185,23 +186,23 @@ Dans la console Git ou Powershell, tapez cette ligne avec le mail utilisé pour 
 
     ssh-keygen -t ed25519 -C "votremail@utilisepourgithub.com"
 
-Ne mettez pas de passphrases, inutiles dans le cadre d'une formation, puis ajoutez la clef avec le code ci-dessous
+Ne mettez pas de passphrases, inutiles dans le cadre d'une formation, puis ajoutez la clef avec le code ci-dessous :
 
     ssh-add ~/.ssh/id_ed25519
     eval "$(ssh-agent -s)"
     ssh-add ~/.ssh/id_ed25519
 
-Ensuite copiez la clef publique avec cette commande :
+Copiez la clef publique avec cette commande :
 
     clip < ~/.ssh/id_ed25519.pub
 
-Cliquez sur ce lien puis pour créer un clef SSH sur github :
+Cliquez sur ce lien puis pour créer une clef SSH sur github :
 
 https://github.com/settings/ssh/new
 
 Et rajoutez la clef publique que vous trouverez dans le champ key en collant le résultat de la commande précédente.
 
-Dans cette même console, liez votre ordinateur avec github:
+Dans cette même console, liez votre ordinateur avec github :
 
     git config --global user.name "votre username"
     git config --global user.email votremail@utilisepourgithub.com
@@ -213,7 +214,7 @@ Dans cette même console, liez votre ordinateur avec github:
 - [Retour à l'arborescence](#arborescence)
 
 Un aide-mémoire sur les commandes git liées à github :
-- [Aide mémoire github](https://github.com/WebDevCF2m2022/prefo-git/blob/main/files/github-git-cheat-sheet.pdf)
+- [Aide-mémoire github](files/github-git-cheat-sheet.pdf)
 
 Deux cours en ligne sont particulièrement intéressants (et il y en a de nombreux !) :
 - https://openclassrooms.com/fr/courses/7162856-gerez-du-code-avec-git-et-github

@@ -1,5 +1,7 @@
 # Préfo-git
 
+Michaël
+
 **Cours de préformation sur les commandes (de base) UNIX et DOS, et sur GIT - GITHUB**
 
 ## Arborescence

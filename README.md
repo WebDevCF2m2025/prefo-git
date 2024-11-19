@@ -1,6 +1,11 @@
 # Préfo-git
 
+
 Michaël
+
+
+Jeremy
+
 
 **Cours de préformation sur les commandes (de base) UNIX et DOS, et sur GIT - GITHUB**
 
